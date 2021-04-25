@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.8em;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #464849;
+    border-top: 1px solid black;
+    display: block;
+    padding: 10px 0;
+}
+
+#navbar ul {
+    overflow-y: auto;
+    height: 90%;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#navbar {
+    width: 22%;
+    height: 100%;
+    margin: 20px 0 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 10px;
+    border-right: solid #464849;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav h1 {
+    margin-bottom: 10px;
+}
+
+#main-doc {
+    width: 70%;
+    margin-left: 27%;
+    margin-top: 50px;
+    position: absolute;
+}
+
+.main-section {
+    color: #464849;
+}
+
+h1 {
+    color: black;
+    font-weight: normal;
+}
+
+#main-doc h1 {
+    margin-bottom: 15px;
+}
+
+#main-doc p {
+    margin-bottom: 15px;
+}
+
+#main-doc li {
+    margin: 0 0 15px 50px;
+}
+
+.list-two {
+    margin-left: 50px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    position: relative;
+    line-height: 2em;
+    background-color: #eee;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 840px){
+    #navbar {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        margin: 15px 18px 0 18px;
+        border-right: none;
+        height: 50%;
+    }
+
+    #main-doc{
+        position: relative;
+        top: 0;
+        width: 100%;
+        margin: 280px 18px 0 18px;
+    }
+
+    #main-doc li {
+        margin: 0 18px 15px 45px;
+    }
+
+    .list-two {
+        margin-left: 40px;
+    }
+
+    .nav-link{
+        padding: 2px 8px;
+        height: 30px;
+    }
+    
+    #main-doc h1 {
+    margin-left: 18px;
+    }
+
+    #main-doc p {
+        margin: 0 18px 15px 18px;
+    }
+
+    #navbar ul {
+        overflow-y: scroll;
+        height: 200px;
+        border: 1px solid;
+        border-color: #464849;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+
+
+
+
+}
